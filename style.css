@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(73, 73, 73);
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+h1 {
+  text-align: center;
+  animation: arun 5s linear infinite;
+  /* animation-fill-mode: forwards; */
+}
+@keyframes arun {
+  10% {
+    color: red;
+  }
+  20% {
+    color: yellow;
+  }
+  70% {
+    color: blue;
+  }
+}
+.Container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.MainContainer {
+  background-color: rgb(110, 110, 110);
+  /* border-radius: 0vh; */
+  padding: 8vh;
+  transition: 0.5s linear;
+}
+.MainContainer:hover {
+  cursor: pointer;
+  box-shadow: 7px 7px 24px black;
+  /* box-shadow:7px 7px 25px  rgb(0, 255, 72); */
+}
+.Arun {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(78, 78, 26);
+  padding: 1vh 5vw;
+  border-radius: 1vh;
+}
+
+.converter {
+  /* background-color: yellow; */
+  height: 10vh;
+  padding: 10vh;
+  border-radius: 1vh;
+
+  /* border-color: rgb(255, 0, 162); */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.converter label:nth-child(n) {
+  display: inline-block;
+  width: 10vw;
+}
+.converter input:nth-child(n) {
+  width: 30vw;
+  height: 1vh;
+  padding: 2vh;
+  background-color: transparent;
+  color: wheat;
+  font-size: 2.6vh;
+  margin: 1vh;
+}
+.converter input:focus {
+  outline: none;
+}
+.converter {
+  position: relative;
+}
+.celsius {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
